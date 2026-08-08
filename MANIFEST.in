@@ -1,0 +1,6 @@
+include LICENSE README.md THIRD_PARTY_NOTICES.md
+recursive-include configs *.json
+recursive-include docs/assets *.png
+recursive-include scripts *.py
+recursive-include jittor_hybridsplat/ops/jittor *.h *.cc
+recursive-include jittor_hybridsplat/ops/native CMakeLists.txt *.h *.hpp *.inl *.cu *.cpp LICENSE* copying.txt SOURCE.md

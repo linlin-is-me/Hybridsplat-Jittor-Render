@@ -1,0 +1,119 @@
+# Keep configs, tests, CMake/CUDA sources, Jittor wrappers, vendored GLM
+# headers, license files, and distribution metadata under version control.
+
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.code-workspace
+*.swp
+*.swo
+*~
+
+# Python bytecode, test, type-checker, and notebook caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.hypothesis/
+.ipynb_checkpoints/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Local Python environments
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# Python packaging outputs
+build/
+dist/
+.eggs/
+*.egg-info/
+*.whl
+
+# CMake, compiler, CUDA, and native-library outputs
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+build.ninja
+.ninja_*
+compile_commands.json
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.so.*
+*.dll
+*.dylib
+*.pdb
+*.exp
+*.ptx
+*.cubin
+*.fatbin
+
+# Jittor and CUDA caches
+.cache/
+.jittor/
+jittor_cache/
+.nv/
+
+# Runtime outputs, reports, and logs
+outputs/
+renders/
+results/
+artifacts/
+logs/
+runs/
+wandb/
+tensorboard/
+*.log
+*.tmp
+*.temp
+*.bak
+*.orig
+
+# Datasets, checkpoints, trained weights, and large numerical artifacts
+data/
+datasets/
+weights/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.npy
+*.npz
+*.ply
+
+# Local bundles and archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
+# Credentials and machine-local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.ppk
+id_rsa*
+id_ed25519*

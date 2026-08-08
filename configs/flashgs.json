@@ -1,0 +1,13 @@
+{
+  "dataset_root": "../data/scene",
+  "ratio": 0.25,
+  "near": 0.2,
+  "far": 20.0,
+  "views": "0",
+  "backend": "flashgs",
+  "flashgs_camera_path": null,
+  "dump_raw": true,
+  "evaluate": false,
+  "reference": null,
+  "stage_sync": false
+}

@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Hybridsplat-Jittor-Render"
+version = "0.1.0"
+description = "Pure Jittor HybridSplat rendering with standard and deterministic FlashGS backends"
+readme = "README.md"
+requires-python = ">=3.10,<3.12"
+license = {file = "LICENSE"}
+dependencies = [
+  "jittor==1.3.11.0",
+  "numpy>=1.26,<2",
+  "Pillow>=9",
+]
+
+[project.scripts]
+hybridsplat-build = "jittor_hybridsplat.ops.build:main"
+hybridsplat-render = "jittor_hybridsplat.render:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["jittor_hybridsplat*"]
+
+[tool.setuptools.package-data]
+jittor_hybridsplat = [
+  "ops/jittor/*.h",
+  "ops/jittor/*.cc",
+  "ops/native/CMakeLists.txt",
+  "ops/native/**/*.h",
+  "ops/native/**/*.hpp",
+  "ops/native/**/*.inl",
+  "ops/native/**/*.cu",
+  "ops/native/**/*.cpp",
+  "ops/native/**/LICENSE*",
+  "ops/native/**/copying.txt",
+  "ops/native/**/SOURCE.md",
+]
